@@ -1,0 +1,182 @@
+@import "../../index.scss";
+
+.exhibition {
+  width: min(100%, 1140px);
+  margin: 0 auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__col-one {
+    &-title-wrapper {
+      display: flex;
+
+      h1 {
+        font-size: 76px;
+        font-weight: bold;
+        color: white;
+        margin-left: 20px;
+        line-height: 100%;
+      }
+    }
+
+    &-images {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &-image-wrapper {
+      margin: 10px;
+      img {
+        width: 184px;
+        height: 184px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__col-second {
+    position: relative;
+    &-titles {
+    }
+
+    &-title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+
+      h2 {
+        color: white;
+        font-size: 76px;
+        line-height: 100%;
+        background: $background-gradient;
+        background-color: linear-gradient($background-gradient-linear);
+        display: inline-block;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-right: 10px;
+      }
+    }
+
+    &-arrow-icon {
+      cursor: pointer;
+    }
+
+    &-dropdown {
+      position: absolute;
+      right: 0;
+      text-align: end;
+      margin-right: 70px;
+      font-size: 20px;
+      line-height: 150%;
+      background: $background-gradient;
+      background-color: linear-gradient($background-gradient-linear);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      h2 {
+        cursor: pointer;
+      }
+
+      &--hidden {
+        display: none;
+      }
+
+      &--block {
+        display: block;
+      }
+    }
+
+    &-map {
+      margin-top: 50px;
+      position: relative;
+
+      &-itself {
+        max-width: 100%;
+      }
+
+      &-marker--gradient-moscow {
+        position: absolute;
+        top: 45px;
+        left: 53%;
+        cursor: pointer;
+      }
+
+      &-marker--gray-moscow {
+        position: absolute;
+        top: 52.5px;
+        left: 53.8%;
+        cursor: pointer;
+      }
+
+      &-marker--gradient-uk {
+        position: absolute;
+        top: 55px;
+        left: 42%;
+        cursor: pointer;
+      }
+
+      &-marker--gray-uk {
+        position: absolute;
+        top: 63px;
+        left: 42.8%;
+        cursor: pointer;
+      }
+
+      &-marker--gradient-dubai {
+        position: absolute;
+        top: 37%;
+        right: 31%;
+        cursor: pointer;
+      }
+
+      &-marker--gray-dubai {
+        position: absolute;
+        top: 39.7%;
+        right: 32%;
+        cursor: pointer;
+      }
+
+      &-marker--gray-moscow,
+      &-marker--gray-moscow * {
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          fill: rgb(250, 123, 84);
+        }
+      }
+
+      &-marker--gray-uk,
+      &-marker--gray-uk * {
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          fill: rgb(250, 123, 84);
+        }
+      }
+      &-marker--gray-dubai,
+      &-marker--gray-dubai * {
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          fill: rgb(250, 123, 84);
+        }
+      }
+    }
+
+    &-title-bottom {
+      margin-top: 20px;
+      font-size: 76px;
+      line-height: 100%;
+      text-align: end;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: white;
+      -webkit-text-stroke-width: 2px;
+    }
+  }
+}

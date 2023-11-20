@@ -1,0 +1,139 @@
+@import "../../index.scss";
+
+.partner {
+  margin-top: 60px;
+  min-height: 100vh;
+  background: black;
+  color: white;
+  overflow: hidden;
+
+  &__container {
+    padding-top: 95px;
+    width: min(100%, 1140px);
+    margin: 0 auto;
+  }
+
+  &__hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 110px;
+      width: max-content;
+      line-height: 100%;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-fill-color: transparent;
+      z-index: 990;
+      margin-bottom: 230px;
+    }
+  }
+
+  &__img-wing {
+    position: absolute;
+    right: -10%;
+    top: 0;
+    max-width: 600px;
+  }
+
+  &__img-cube-gradient {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    max-width: 600px;
+  }
+
+  &__img-reactangle {
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+    max-width: 250px;
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 12px 30px;
+    margin-left: 10px;
+    background: transparent;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 100px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background: $background-gradient;
+    }
+
+    img {
+      margin-left: 15px;
+    }
+  }
+
+  &__submission {
+    position: relative;
+    background: white;
+    margin-top: 100px;
+
+    &-container {
+      padding-top: 100px;
+      width: min(100%, 1140px);
+      margin: 0 auto;
+      min-height: 100vh;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      color: black;
+    }
+  }
+
+  &__img-balls {
+    position: absolute;
+    top: -30%;
+    z-index: 990;
+  }
+
+  &__col-one {
+    z-index: 991;
+    background: $background-gradient;
+    background-color: linear-gradient($background-gradient-linear);
+    padding: 50px;
+    border-radius: 20px;
+    color: white;
+    max-width: 450px;
+  }
+
+  &__header-logo * {
+    color: white;
+    fill: white;
+  }
+
+  &__col-one-title {
+    font-size: 45px;
+    margin-top: 80px;
+    line-height: 110%;
+  }
+
+  &__col-one-description {
+    margin-top: 40px;
+  }
+
+  &__col-one-title-second{
+    font-size: 45px;
+    margin-top: 40px;
+    line-height: 110%;
+  }
+
+  &__arrow-left-long{
+    
+  }
+}

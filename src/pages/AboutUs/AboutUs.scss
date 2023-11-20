@@ -1,0 +1,126 @@
+@import "../../index.scss";
+
+.about {
+  margin-top: 60px;
+  padding-bottom: 130px;
+  min-height: 100vh;
+  background: black;
+  color: white;
+  background-image: url('/img/wing.svg');
+  background-repeat: no-repeat;
+
+  &__container {
+    padding-top: 95px;
+    width: min(100%, 1140px);
+    margin: 0 auto;
+  }
+
+  &__grid {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    img{
+      width: 76px;
+    }
+
+    h1 {
+      font-size: 56px;
+      margin-left: 25px;
+      line-height: 100%;
+    }
+  }
+
+  &__gradient-container {
+    background: $background-gradient;
+    background-color: linear-gradient($background-gradient-linear);
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  &__text-container{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+
+    &:last-child{
+      margin-bottom: 35px;
+    }
+
+    h2{
+      font-size: 26px;
+
+      span{
+        font-size: 16px;
+      }
+    }
+
+    p{
+      font-weight: 300;
+      font-size: 15px;
+    }
+  }
+
+  &__col-second{
+    margin-left: 50px;
+
+    p{
+      span{
+        background: $background-gradient;
+        background-color: linear-gradient($background-gradient-linear);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  &__images{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    margin-top: 20px;
+  }
+
+  &__image-container{
+    margin: 20px;
+
+    img{
+      width: 120px;
+    }
+
+    p{
+      font-size: 14px;
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+
+  &__paragraph{
+    margin-top: 65px;
+  }
+
+  &__col-third{
+    position: relative;
+    width: 100px;
+    h2{
+      position: absolute;
+      left: -130%;
+      bottom: 56%;
+      transform: rotate(90deg);
+      width: max-content;
+      font-size: 70px;
+      line-height: 100%;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke: 2px solid white;
+    }
+  }
+}

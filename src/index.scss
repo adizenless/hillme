@@ -1,0 +1,37 @@
+$background-gradient: rgb(113,86,255);
+$background-gradient-linear: linear-gradient(90deg, rgba(113,86,255,1) 0%, rgba(113,86,255,1) 38%, rgba(158,55,255,1) 100%);
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+:root{
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+a, a::before, a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+
+.svg-icon {
+  transition: fill 0.3s ease; /* Add a smooth transition effect */
+}
+
+.svg-icon:hover {
+  fill: green; /* Change this to your desired hover color */
+}
+
+.svg-icon.hovered {
+  fill: green; /* Set the same color as :hover to maintain the color during the hover state */
+}

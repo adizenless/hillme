@@ -1,0 +1,93 @@
+@import "../../index.scss";
+
+.verify-age {
+  height: 100vh;
+  background: #18181ae1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 995;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__modal {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100%, 800px);
+    padding: 40px;
+    border-radius: 20px;
+  }
+
+  &__logo {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 102.8%;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+
+  &__buttons {
+    margin-top: 30px;
+    display: flex;
+  }
+
+  &__button-wrapper {
+    padding: 2px;
+    border-radius: 100px;
+    height: 55px;
+
+    &--one {
+      background: $background-gradient;
+      background: $background-gradient-linear;
+      margin-right: 9px;
+    }
+
+    &--two{
+      margin-left: 9px;
+    }
+  }
+
+  &__button {
+    font-size: 22px;
+    font-weight: 800;
+    padding: 0 20px;
+    height: 100%;
+    width: 270px;
+    background: white;
+    border-radius: 100px;
+    border: 0;
+    cursor: pointer;
+    // text-[24px] font-extrabold px-[20px] h-full w-[250px] rounded-full
+
+    &--one {
+      background: white;
+
+      &:hover {
+        background: #969696;
+      }
+    }
+
+    &--two {
+      background: $background-gradient;
+      background: $background-gradient-linear;
+      color: white;
+
+      &:hover {
+        filter: brightness(90%);
+      }
+    }
+  }
+}
